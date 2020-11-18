@@ -7,6 +7,3 @@ MyClass::MyClass()
 {
 }
 
-MyClass::~MyClass()
-{
-}

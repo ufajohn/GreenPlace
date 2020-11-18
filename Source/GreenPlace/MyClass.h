@@ -11,5 +11,5 @@ class GREENPLACE_API MyClass
 {
 public:
 	MyClass();
-	~MyClass();
+
 };
