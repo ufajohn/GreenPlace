@@ -17,6 +17,7 @@ class GREENPLACE_API AMyPawnTest : public APawn
 public:
 	// Sets default values for this pawn's properties
 	AMyPawnTest();
+	
 
 protected:
 	// Called when the game starts or when spawned
@@ -29,5 +30,15 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+		UStaticMeshComponent* Mesh;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+		USpringArmComponent* SpringArm;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+		UCameraComponent* Camera;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float MovementForce;
 };
