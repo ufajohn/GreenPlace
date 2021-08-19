@@ -92,3 +92,5 @@ Config/SteamVRBindings/vive_tracker_camera.json
 
 *.skp
 *.skb
+
+GreenPlace.uproject
